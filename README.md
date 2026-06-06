@@ -12,4 +12,4 @@
 
 [Курс Математическая статистика](./Statistics) 
 
-[Курс BigData (отдельный репозиторий)]()
+[Курс BigData (отдельный репозиторий)](https://github.com/lizzzafomenko/ai-masters-bigdata)
