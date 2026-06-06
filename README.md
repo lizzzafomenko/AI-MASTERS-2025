@@ -1,2 +1,15 @@
 # AI-MASTERS-2025
-all AI Masters course data and solutions
+
+решения всех заданий и контестов на программе AI Masters
+
+[Курс Алгоритмы и структуры данных](./Algorithms) 
+
+[Курс Глубокое обучение](<./Deep Learning>) 
+
+[Курс Машинное обучение](<./Machine Learning>) 
+
+[Курс Основы Python](./Python) 
+
+[Курс Математическая статистика](./Statistics) 
+
+[Курс BigData (отдельный репозиторий)]()
