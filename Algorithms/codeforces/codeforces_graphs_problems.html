@@ -1,0 +1,1189 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html lang="en">
+<head>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-743380-5"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'UA-743380-5');
+        </script>
+
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="X-Csrf-Token" content="823296140cb4757e3eac3169edc8418a"/>
+    <meta id="viewport" name="viewport" content="width=device-width, initial-scale=0.01"/>
+    <meta name="robots" content="noai">
+    <meta name="robots" content="noimageai">
+
+    <script type="text/javascript" src="//codeforces.com/codeforces.org/s/15318/js/jquery-1.8.3.js"></script>
+    <script type="application/javascript">
+        window.locale = "en";
+        window.standaloneContest = false;
+        function adjustViewport() {
+            var screenWidthPx = Math.min($(window).width(), window.screen.width);
+            var siteWidthPx = 1100; // min width of site
+            var ratio = Math.min(screenWidthPx / siteWidthPx, 1.0);
+            var viewport = "width=device-width, initial-scale=" + ratio;
+            $('#viewport').attr('content', viewport);
+            var style = $('<style>html * { max-height: 1000000px; }</style>');
+            $('html > head').append(style);
+        }
+
+        if ( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
+            adjustViewport();
+        }
+
+        /* Protection against trailing dot in domain. */
+        let hostLength = window.location.host.length;
+        if (hostLength > 1 && window.location.host[hostLength - 1] === '.') {
+            window.location = window.location.protocol + "//" + window.location.host.substring(0, hostLength - 1);
+        }
+    </script>
+
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="expires" content="-1">
+    <meta http-equiv="profileName" content="f1">
+    <meta name="google-site-verification" content="OTd2dN5x4nS4OPknPI9JFg36fKxjqY0i1PSfFPv_J90"/>
+    <meta property="fb:admins" content="100001352546622" />
+    <meta property="og:image" content="//codeforces.com/codeforces.org/s/15318/images/codeforces-sponsored-by-ton.png" />
+    <link rel="image_src" href="//codeforces.com/codeforces.org/s/15318/images/codeforces-sponsored-by-ton.png" />
+    <meta property="og:title" content="Problems - Codeforces"/>
+    <meta property="og:description" content=""/>
+    
+    <meta property="og:site_name" content="Codeforces"/>
+    
+    
+    
+    
+    
+    
+    <meta name="utc_offset" content="+03:00"/>
+    <meta name="verify-reformal" content="f56f99fd7e087fb6ccb48ef2" />
+    <title>Problems - Codeforces</title>
+        <meta name="description" content="Codeforces. Programming competitions and contests, programming community" />
+        <meta name="keywords" content="programming algorithm contest competition informatics olympiads c++ java graphs vkcup" />
+    <meta name="robots" content="index, follow" />
+
+    <link rel="stylesheet" href="//codeforces.com/codeforces.org/s/15318/css/font-awesome.min.css" type="text/css" charset="utf-8" />
+    <link rel="stylesheet" href="//codeforces.com/codeforces.org/s/15318/css/line-awesome.min.css" type="text/css" charset="utf-8" />
+
+        <link rel="preconnect" href="https://challenges.cloudflare.com">
+        <link rel="dns-prefetch" href="https://challenges.cloudflare.com">
+        <style type="text/css">@font-face {font-family:PT Sans Narrow;font-style:normal;font-weight:400;src:url(/cf-fonts/s/pt-sans-narrow/5.0.19/cyrillic-ext/400/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:PT Sans Narrow;font-style:normal;font-weight:400;src:url(/cf-fonts/s/pt-sans-narrow/5.0.19/cyrillic/400/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:PT Sans Narrow;font-style:normal;font-weight:400;src:url(/cf-fonts/s/pt-sans-narrow/5.0.19/latin/400/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:PT Sans Narrow;font-style:normal;font-weight:400;src:url(/cf-fonts/s/pt-sans-narrow/5.0.19/latin-ext/400/normal.woff2);unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:PT Sans Narrow;font-style:normal;font-weight:700;src:url(/cf-fonts/s/pt-sans-narrow/5.0.19/latin-ext/700/normal.woff2);unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:PT Sans Narrow;font-style:normal;font-weight:700;src:url(/cf-fonts/s/pt-sans-narrow/5.0.19/latin/700/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:PT Sans Narrow;font-style:normal;font-weight:700;src:url(/cf-fonts/s/pt-sans-narrow/5.0.19/cyrillic/700/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:PT Sans Narrow;font-style:normal;font-weight:700;src:url(/cf-fonts/s/pt-sans-narrow/5.0.19/cyrillic-ext/700/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}</style>
+        <style type="text/css">@font-face {font-family:Cuprum;font-style:normal;font-weight:400;src:url(/cf-fonts/s/cuprum/5.0.18/cyrillic-ext/400/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:Cuprum;font-style:normal;font-weight:400;src:url(/cf-fonts/s/cuprum/5.0.18/latin/400/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:Cuprum;font-style:normal;font-weight:400;src:url(/cf-fonts/s/cuprum/5.0.18/latin-ext/400/normal.woff2);unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:Cuprum;font-style:normal;font-weight:400;src:url(/cf-fonts/s/cuprum/5.0.18/vietnamese/400/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:Cuprum;font-style:normal;font-weight:400;src:url(/cf-fonts/s/cuprum/5.0.18/cyrillic/400/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}</style>
+
+
+    <link rel="apple-touch-icon" sizes="57x57" href="//codeforces.com/codeforces.org/s/15318/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="//codeforces.com/codeforces.org/s/15318/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="//codeforces.com/codeforces.org/s/15318/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="//codeforces.com/codeforces.org/s/15318/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="//codeforces.com/codeforces.org/s/15318/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="//codeforces.com/codeforces.org/s/15318/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="//codeforces.com/codeforces.org/s/15318/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="//codeforces.com/codeforces.org/s/15318/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="//codeforces.com/codeforces.org/s/15318/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="//codeforces.com/codeforces.org/s/15318/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="//codeforces.com/codeforces.org/s/15318/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="//codeforces.com/codeforces.org/s/15318/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="//codeforces.com/codeforces.org/s/15318/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="//codeforces.com/codeforces.org/s/15318/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <!--CombineResourcesFilter-->
+    <link rel="stylesheet" href="//codeforces.com/codeforces.org/s/15318/css/prettify.css" type="text/css" charset="utf-8" />
+    <link rel="stylesheet" href="//codeforces.com/codeforces.org/s/15318/css/clear.css" type="text/css" charset="utf-8" />
+    <link rel="stylesheet" href="//codeforces.com/codeforces.org/s/15318/css/style.css" type="text/css" charset="utf-8" />
+    <link rel="stylesheet" href="//codeforces.com/codeforces.org/s/15318/css/ttypography.css" type="text/css" charset="utf-8" />
+    <link rel="stylesheet" href="//codeforces.com/codeforces.org/s/15318/css/problem-statement.css" type="text/css" charset="utf-8" />
+    <link rel="stylesheet" href="//codeforces.com/codeforces.org/s/15318/css/second-level-menu.css" type="text/css" charset="utf-8" />
+    <link rel="stylesheet" href="//codeforces.com/codeforces.org/s/15318/css/roundbox.css" type="text/css" charset="utf-8" />
+    <link rel="stylesheet" href="//codeforces.com/codeforces.org/s/15318/css/datatable.css" type="text/css" charset="utf-8" />
+    <link rel="stylesheet" href="//codeforces.com/codeforces.org/s/15318/css/table-form.css" type="text/css" charset="utf-8" />
+    <link rel="stylesheet" href="//codeforces.com/codeforces.org/s/15318/css/topic.css" type="text/css" charset="utf-8" />
+    <link rel="stylesheet" href="//codeforces.com/codeforces.org/s/15318/css/jquery.jgrowl.css" type="text/css" charset="utf-8" />
+    <link rel="stylesheet" href="//codeforces.com/codeforces.org/s/15318/css/facebox.css" type="text/css" charset="utf-8" />
+    <link rel="stylesheet" href="//codeforces.com/codeforces.org/s/15318/css/jquery.wysiwyg.css" type="text/css" charset="utf-8" />
+    <link rel="stylesheet" href="//codeforces.com/codeforces.org/s/15318/css/jquery.autocomplete.css" type="text/css" charset="utf-8" />
+    <link rel="stylesheet" href="//codeforces.com/codeforces.org/s/15318/css/codeforces.datepick.css" type="text/css" charset="utf-8" />
+    <link rel="stylesheet" href="//codeforces.com/codeforces.org/s/15318/css/colorbox.css" type="text/css" charset="utf-8" />
+    <link rel="stylesheet" href="//codeforces.com/codeforces.org/s/15318/css/jquery.drafts.css" type="text/css" charset="utf-8" />
+        <link rel="stylesheet" href="//codeforces.com/codeforces.org/s/15318/css/community.css" type="text/css" charset="utf-8" />
+        <link rel="stylesheet" href="//codeforces.com/codeforces.org/s/15318/css/groups.css" type="text/css" charset="utf-8" />
+        <link rel="stylesheet" href="//codeforces.com/codeforces.org/s/15318/css/sidebar-menu.css" type="text/css" charset="utf-8" />
+
+    <!-- MathJax -->
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {inlineMath: [['$$$','$$$']], displayMath: [['$$$$$$','$$$$$$']]}
+    });
+    MathJax.Hub.Register.StartupHook("End", function () {
+        Codeforces.runMathJaxListeners();
+    });
+    </script>
+    <script type="text/javascript" async
+            src="https://codeforces.com/mathjax.codeforces.org/MathJax.js?config=TeX-AMS_HTML-full"
+    >
+    </script>
+    <!-- /MathJax -->
+
+    <script type="text/javascript" src="//codeforces.com/codeforces.org/s/15318/js/prettify/prettify.js"></script>
+    <script type="text/javascript" src="//codeforces.com/codeforces.org/s/15318/js/moment-with-locales.min.js"></script>
+    <script type="text/javascript" src="//codeforces.com/codeforces.org/s/15318/js/pushstream.js"></script>
+    <script type="text/javascript" src="//codeforces.com/codeforces.org/s/15318/js/jquery.easing.min.js"></script>
+    <script type="text/javascript" src="//codeforces.com/codeforces.org/s/15318/js/jquery.lavalamp.min.js"></script>
+    <script type="text/javascript" src="//codeforces.com/codeforces.org/s/15318/js/jquery.jgrowl.js"></script>
+    <script type="text/javascript" src="//codeforces.com/codeforces.org/s/15318/js/jquery.swipe.js"></script>
+    <script type="text/javascript" src="//codeforces.com/codeforces.org/s/15318/js/jquery.hotkeys.js"></script>
+    <script type="text/javascript" src="//codeforces.com/codeforces.org/s/15318/js/facebox.js"></script>
+    <script type="text/javascript" src="//codeforces.com/codeforces.org/s/15318/js/jquery.wysiwyg.js"></script>
+    <script type="text/javascript" src="//codeforces.com/codeforces.org/s/15318/js/controls/wysiwyg.colorpicker.js"></script>
+    <script type="text/javascript" src="//codeforces.com/codeforces.org/s/15318/js/controls/wysiwyg.table.js"></script>
+    <script type="text/javascript" src="//codeforces.com/codeforces.org/s/15318/js/controls/wysiwyg.image.js"></script>
+    <script type="text/javascript" src="//codeforces.com/codeforces.org/s/15318/js/controls/wysiwyg.link.js"></script>
+    <script type="text/javascript" src="//codeforces.com/codeforces.org/s/15318/js/jquery.autocomplete.js"></script>
+    <script type="text/javascript" src="//codeforces.com/codeforces.org/s/15318/js/jquery.datepick.js"></script>
+    <script type="text/javascript" src="//codeforces.com/codeforces.org/s/15318/js/jquery.ie6blocker.js"></script>
+    <script type="text/javascript" src="//codeforces.com/codeforces.org/s/15318/js/jquery.colorbox-min.js"></script>
+    <script type="text/javascript" src="//codeforces.com/codeforces.org/s/15318/js/jquery.ba-bbq.js"></script>
+    <script type="text/javascript" src="//codeforces.com/codeforces.org/s/15318/js/jquery.drafts.js"></script>
+    <script type="text/javascript" src="//codeforces.com/codeforces.org/s/15318/js/clipboard.min.js"></script>
+    <script type="text/javascript" src="//codeforces.com/codeforces.org/s/15318/js/autosize.min.js"></script>
+    <script type="text/javascript" src="//codeforces.com/codeforces.org/s/15318/js/sjcl.js"></script>
+    <script type="text/javascript" src="/scripts/795cf546743ef304c0cc8760428f2e04/en/codeforces-options.js"></script>
+    <script type="text/javascript" src="//codeforces.com/codeforces.org/s/15318/js/codeforces.js?v=20160131"></script>
+    <script type="text/javascript" src="//codeforces.com/codeforces.org/s/15318/js/EventCatcher.js?v=20160131"></script>
+    <script type="text/javascript" src="//codeforces.com/codeforces.org/s/15318/js/preparedVerdictFormats-en.js"></script>
+    <script type="text/javascript" src="//codeforces.com/codeforces.org/s/15318/js/confetti.min.js"></script>
+    <script type="text/javascript" src="//codeforces.com/codeforces.org/s/15318/js/purify.min.js"></script>
+    <!--/CombineResourcesFilter-->
+
+    <link rel="stylesheet" href="//codeforces.com/codeforces.org/s/15318/markitup/skins/markitup/style.css" type="text/css" charset="utf-8" />
+    <link rel="stylesheet" href="//codeforces.com/codeforces.org/s/15318/markitup/sets/markdown/style.css" type="text/css" charset="utf-8" />
+
+
+    <script type="text/javascript" src="//codeforces.com/codeforces.org/s/15318/markitup/jquery.markitup.js"></script>
+    <script type="text/javascript" src="//codeforces.com/codeforces.org/s/15318/markitup/sets/markdown/set.js"></script>
+
+    <!--[if IE]>
+    <style>
+        #sidebar {
+            padding-left: 1em;
+            margin: 1em 1em 1em 0;
+        }
+    </style>
+    <![endif]-->
+
+
+
+
+</head>
+<body class=" "><span style='display:none;' class='csrf-token' data-csrf='823296140cb4757e3eac3169edc8418a'>&nbsp;</span>
+
+<!-- .notificationTextCleaner used in Codeforces.showAnnouncements() -->
+<div class="notificationTextCleaner" style="font-size: 0"></div>
+<div class="button-up" style="display: none; opacity: 0.7; width: 50px; height:100%; position: fixed; left: 0; top: 0; cursor: pointer; text-align: center; line-height: 35px; color: #d3dbe4; font-weight: bold; font-size: 3.0rem;"><i class="icon-circle-arrow-up"></i></div>
+<div class="verdictPrototypeDiv" style="display: none;"></div>
+
+<!-- Codeforces JavaScripts. -->
+<script type="text/javascript">
+    String.prototype.hashCode = function() {
+        var hash = 0, i, chr;
+        if (this.length === 0) return hash;
+        for (i = 0; i < this.length; i++) {
+            chr   = this.charCodeAt(i);
+            hash  = ((hash << 5) - hash) + chr;
+            hash |= 0; // Convert to 32bit integer
+        }
+        return hash;
+    };
+
+    var queryMobile = Codeforces.queryString.mobile;
+    if (queryMobile === "true" || queryMobile === "false") {
+        Codeforces.putToStorage("useMobile", queryMobile === "true");
+    } else {
+        var useMobile = Codeforces.getFromStorage("useMobile");
+        if (useMobile === true || useMobile === false) {
+            if (useMobile != false) {
+                Codeforces.redirect(Codeforces.updateUrlParameter(document.location.href, "mobile", useMobile));
+            }
+        }
+    }
+</script>
+
+<script type="text/javascript">
+    if (window.parent.frames.length > 0) {
+        window.stop();
+    }
+</script>
+
+
+
+
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+    (function () {
+        jQuery.expr[':'].containsCI = function(elem, index, match) {
+            return !match || !match.length || match.length < 4 || !match[3] || (
+                    elem.textContent || elem.innerText || jQuery(elem).text() || ''
+            ).toLowerCase().indexOf(match[3].toLowerCase()) >= 0;
+        }
+    }(jQuery));
+
+    $.ajaxPrefilter(function(options, originalOptions, xhr) {
+        var csrf = Codeforces.getCsrfToken();
+
+        if (csrf) {
+            var data = originalOptions.data;
+            if (originalOptions.data !== undefined) {
+                if (Object.prototype.toString.call(originalOptions.data) === '[object String]') {
+                    data = $.deparam(originalOptions.data);
+                }
+            } else {
+                data = {};
+            }
+            options.data = $.param($.extend(data, { csrf_token: csrf }));
+        }
+    });
+
+    window.getCodeforcesServerTime = function(callback) {
+        $.post("/data/time", {}, callback, "json");
+    }
+
+    window.updateTypography = function () {
+        $("div.ttypography code").addClass("tt");
+        $("div.ttypography pre>code").addClass("prettyprint").removeClass("tt");
+        $("div.ttypography table").addClass("bordertable");
+        prettyPrint();
+    }
+
+    $.ajaxSetup({ scriptCharset: "utf-8" ,contentType: "application/x-www-form-urlencoded; charset=UTF-8", headers: {
+        'X-Csrf-Token': Codeforces.getCsrfToken()
+    }, beforeSend: function(jqXHR, settings) {
+        const url = new URL(settings.url, window.location.href);
+        const urlHref = url.href;
+        url.searchParams.set('rv', Math.random().toString(36).substr(2, 9)); // Generate a random value
+        settings.url = url.href;
+    }});
+
+    window.updateTypography();
+    Codeforces.signForms();
+    Codeforces.applyDatatableJs("Hold Ctrl+Alt and click to hide column. Also, you can drag&drop columns to reorder them.");
+
+    setTimeout(function() {
+        $(".second-level-menu-list").lavaLamp({
+            fx: "backout",
+            speed: 700
+        });
+    }, 100);
+
+
+    Codeforces.countdown();
+    $("a[rel='photobox']").colorbox();
+
+        var count = 0;
+
+        function getDelay() {
+            var delay = 0;
+            var last = Codeforces.getFromStorage("LastOnlineTimeUpdaterMillis", 0);
+            if (last && last != null) {
+                var period = count < 20 ? 360 * 1000 : 600 * 1000; // 6 or 10 minutes.
+                delay = period - (new Date().getTime() - last);
+                if (delay < 0)
+                    delay = 0;
+            }
+            return delay;
+        }
+
+        window.setInterval(function () {
+            if (getDelay() <= 0 && count < 120) {
+                ++count;
+                Codeforces.ping("/data/update-online");
+            }
+        }, 5000);
+
+        var handle = "lizzzafomenko";
+        $("a.rated-user:contains(" + handle + "), span.participant:contains(" + handle + ")").each(function () {
+            if ($(this).text() == handle) {
+                var td = $(this).parent();
+                var tr = $(this).parent().parent();
+                if (td.is("td") && tr.is("tr") && !tr.hasClass("disable-highlight-self")) {
+                    info(handle);
+                    tr.addClass("highlighted-row");
+                }
+            }
+        });
+
+    function showAnnouncements(json) {
+        if (json.t === "a") {
+            setTimeout(function() {
+               Codeforces.showAnnouncements(json.d, "en");
+            }, Math.random() * 500);
+        }
+    }
+
+    function showEventCatcherUserMessage(json) {
+        if (json.t === "s") {
+            var points = json.d[5];
+            var passedTestCount = json.d[7];
+            var judgedTestCount = json.d[8];
+            var verdict = preparedVerdictFormats[json.d[12]];
+            var verdictPrototypeDiv = $(".verdictPrototypeDiv");
+            verdictPrototypeDiv.html(verdict);
+            if (judgedTestCount != null && judgedTestCount != undefined) {
+                verdictPrototypeDiv.find(".verdict-format-judged").text(judgedTestCount);
+            }
+            if (passedTestCount != null && passedTestCount != undefined) {
+                verdictPrototypeDiv.find(".verdict-format-passed").text(passedTestCount);
+            }
+            if (points != null && points != undefined) {
+                verdictPrototypeDiv.find(".verdict-format-points").text(points);
+            }
+            Codeforces.showMessage(verdictPrototypeDiv.text());
+        }
+    }
+
+    $(".clickable-title").each(function() {
+        var title = $(this).attr("data-title");
+        if (title) {
+            var tmp = document.createElement("DIV");
+            tmp.innerHTML = title;
+            $(this).attr("title", tmp.textContent || tmp.innerText || "");
+        }
+    });
+
+    $(".clickable-title").click(function() {
+        const title = $(this).attr("data-title");
+        const clazz = $(this).attr("data-clazz");
+        const props = {};
+        if (typeof (clazz) !== 'undefined') {
+            props['clazz'] = clazz;
+        }
+        if (title) {
+            Codeforces.alert(title, null, null, props);
+        } else {
+            Codeforces.alert($(this).attr("title"), null, null, props);
+        }
+    }).css("position", "relative").css("bottom", "3px");
+
+        Codeforces.showDelayedMessage();
+
+    Codeforces.reformatTimes();
+
+    //Codeforces.initializePubSub();
+    if (window.codeforcesOptions.subscribeServerUrl) {
+        window.eventCatcher = new EventCatcher(
+            window.codeforcesOptions.subscribeServerUrl,
+            [
+                Codeforces.getGlobalChannel(),
+                Codeforces.getUserChannel(),
+                Codeforces.getUserShowMessageChannel(),
+                Codeforces.getContestChannel(),
+                Codeforces.getParticipantChannel(),
+                Codeforces.getTalkChannel()
+            ]
+        );
+
+        if (Codeforces.getParticipantChannel()) {
+            window.eventCatcher.subscribe(Codeforces.getParticipantChannel(), function(json) {
+                showAnnouncements(json);
+            });
+        }
+
+        if (Codeforces.getContestChannel()) {
+            window.eventCatcher.subscribe(Codeforces.getContestChannel(), function(json) {
+                showAnnouncements(json);
+            });
+        }
+
+        if (Codeforces.getGlobalChannel()) {
+            window.eventCatcher.subscribe(Codeforces.getGlobalChannel(), function(json) {
+                showAnnouncements(json);
+            });
+        }
+
+        if (Codeforces.getUserChannel()) {
+            window.eventCatcher.subscribe(Codeforces.getUserChannel(), function(json) {
+                showAnnouncements(json);
+            });
+        }
+
+        if (Codeforces.getUserShowMessageChannel()) {
+            window.eventCatcher.subscribe(Codeforces.getUserShowMessageChannel(), function(json) {
+                showEventCatcherUserMessage(json);
+            });
+        }
+    }
+
+    Codeforces.setupContestTimes("/group/vsWXQeQfKd/data/contests");
+    Codeforces.setupSpoilers();
+    Codeforces.setupTutorials("/data/problemTutorial");
+        });
+    </script>
+
+
+<div id="body">
+<div style="width: 950px; margin: 0 auto;" class="compact-problemset">
+    <div id="header" style="position: relative; margin: 0;">
+        <div style="float:left;">
+                    <a href="/"><img height="65" style="height: 65px;" src="//codeforces.com/codeforces.org/s/15318/images/codeforces-sponsored-by-ton.png" alt="Codeforces"/></a>
+        </div>
+        <div class="lang">
+            <div style="text-align: right;">
+                <a href="?locale=en"><img src="//codeforces.com/codeforces.org/s/15318/images/flags/24/gb.png" title="In English" alt="In English"/></a>
+                <a href="?locale=ru"><img src="//codeforces.com/codeforces.org/s/15318/images/flags/24/ru.png" title="По-русски" alt="По-русски"/></a>
+            </div>
+        </div>
+        <br style="clear: both;"/>
+    </div>
+
+    <br style="clear: both;"/>
+
+    <div style="text-align: center; font-size: 1.8rem; margin-bottom: 0.5em;"
+         class="caption">Графы</div>
+    <div style="border-top: 1px solid #ccc; height: 1em;"></div>
+
+    <div class="problem-frames">
+        <div
+                    style="margin-bottom: 2em;"
+        >
+
+    <style>
+        #facebox .content:has(.diff-popup) {
+            width: 90vw;
+            max-width: 120rem !important;
+        }
+
+        .testCaseMarker {
+            position: absolute;
+            font-weight: bold;
+            font-size: 1rem;
+        }
+
+        .diff-popup {
+            width: 90vw;
+            max-width: 120rem !important;
+            display: none;
+            overflow: auto;
+        }
+
+        .input-output-copier {
+            font-size: 1.2rem;
+            float: right;
+            color: #888 !important;
+            cursor: pointer;
+            border: 1px solid rgb(185, 185, 185);
+            padding: 3px;
+            margin: 1px;
+            line-height: 1.1rem;
+            text-transform: none;
+        }
+
+        .input-output-copier:hover {
+            background-color: #def;
+        }
+
+        .test-explanation textarea {
+            width: 100%;
+            height: 1.5em;
+        }
+
+        .pending-submission-message {
+            color: darkorange !important;
+        }
+    </style>
+    <script>
+        const OPENING_SPACE = String.fromCharCode(1001);
+        const CLOSING_SPACE = String.fromCharCode(1002);
+
+        const nodeToText = function (node, pre) {
+            let result = [];
+
+            if (node.tagName === "SCRIPT" || node.tagName === "math"
+                || (node.classList && node.classList.contains("input-output-copier")))
+                return [];
+
+            if (node.tagName === "NOBR") {
+                result.push(OPENING_SPACE);
+            }
+
+            if (node.nodeType === Node.TEXT_NODE) {
+                let s = node.textContent;
+                if (!pre) {
+                    s = s.replace(/\s+/g, " ");
+                }
+                if (s.length > 0) {
+                    result.push(s);
+                }
+            }
+
+            if (pre && node.tagName === "BR") {
+                result.push("\n");
+            }
+
+            node.childNodes.forEach(function (child) {
+                result.push(nodeToText(child, node.tagName === "PRE").join(""));
+            });
+
+            if (node.tagName === "DIV"
+                || node.tagName === "P"
+                || node.tagName === "PRE"
+                || node.tagName === "UL"
+                || node.tagName === "LI"
+            ) {
+                result.push("\n");
+            }
+
+            if (node.tagName === "NOBR") {
+                result.push(CLOSING_SPACE);
+            }
+
+            return result;
+        }
+
+        const isSpecial = function (c) {
+            return c === ',' || c === '.' || c === ';' || c === ')' || c === ' ';
+        }
+
+        const convertStatementToText = function(statmentNode) {
+            const text = nodeToText(statmentNode, false).join("").replace(/ +/g, " ").replace(/\n\n+/g, "\n\n");
+            let result = [];
+            for (let i = 0; i < text.length; i++) {
+                const c = text.charAt(i);
+                if (c === OPENING_SPACE) {
+                    if (!((i > 0 && text.charAt(i - 1) === '(') || (result.length > 0 && result[result.length - 1] === ' '))) {
+                        result.push('+');
+                    }
+                } else if (c === CLOSING_SPACE) {
+                    if (!(i + 1 < text.length && isSpecial(text.charAt(i + 1)))) {
+                        result.push('-');
+                    }
+                } else {
+                    result.push(c);
+                }
+            }
+            return result.join("").split("\n").map(value => value.trim()).join("\n");
+        };
+    </script>
+    <div class="diff-popup">
+    </div>
+
+<div class="problemindexholder" problemindex="A" data-uuid="ps_e4b8956834f45c47e4f4295f149028b208ad462e">
+    <div style="display: none; margin:1em 0;text-align: center; position: relative;" class="alert alert-info diff-notifier">
+        <div>The problem statement has recently been changed. <a class="view-changes" href="#">View the changes.</a></div>
+        <span class="diff-notifier-close" style="position: absolute; top: 0.2em; right: 0.3em; cursor: pointer; font-size: 1.4em;">&times;</span>
+    </div>
+        <div class="ttypography"><div class="problem-statement"><div class="header"><div class="title">A. Sum in Binary Tree</div><div class="time-limit"><div class="property-title">time limit per test</div>1 second</div><div class="memory-limit"><div class="property-title">memory limit per test</div>256 megabytes</div><div class="input-file input-standard"><div class="property-title">input</div>standard input</div><div class="output-file output-standard"><div class="property-title">output</div>standard output</div></div><div><p>Vanya really likes math. One day when he was solving another math problem, he came up with an interesting tree. This tree is built as follows.</p><p>Initially, the tree has only one vertex with the number $$$1$$$ — the root of the tree. Then, Vanya adds two children to it, assigning them consecutive numbers — $$$2$$$ and $$$3$$$, respectively. After that, he will add children to the vertices in increasing order of their numbers, starting from $$$2$$$, assigning their children the minimum unused indices. As a result, Vanya will have an infinite tree with the root in the vertex $$$1$$$, where each vertex will have exactly two children, and the vertex numbers will be arranged sequentially by layers.</p><center> <img class="tex-graphics" src="https://espresso.codeforces.com/19767bb6961374fcead1e1f59f5391d1b3248808.png" style="max-width: 100.0%;max-height: 100.0%;" />   <span class="tex-font-size-small">Part of Vanya's tree.</span> </center><p>Vanya wondered what the sum of the vertex numbers on the path from the vertex with number $$$1$$$ to the vertex with number $$$n$$$ in such a tree is equal to. Since Vanya doesn't like counting, he asked you to help him find this sum.</p></div><div class="input-specification"><div class="section-title">Input</div><p>The first line contains a single integer $$$t$$$ ($$$1 \le t \le 10^4$$$) — the number of test cases.</p><p>This is followed by $$$t$$$ lines — the description of the test cases. Each line contains one integer $$$n$$$ ($$$1 \le n \le 10^{16}$$$) — the number of vertex for which Vanya wants to count the sum of vertex numbers on the path from the root to that vertex.</p></div><div class="output-specification"><div class="section-title">Output</div><p>For each test case, print one integer — the desired sum.</p></div><div class="sample-tests"><div class="section-title">Example</div><div class="sample-test"><div class="input"><div class="title">Input</div><pre>
+<div class="test-example-line test-example-line-even test-example-line-0">6</div><div class="test-example-line test-example-line-odd test-example-line-1">3</div><div class="test-example-line test-example-line-even test-example-line-2">10</div><div class="test-example-line test-example-line-odd test-example-line-3">37</div><div class="test-example-line test-example-line-even test-example-line-4">1</div><div class="test-example-line test-example-line-odd test-example-line-5">10000000000000000</div><div class="test-example-line test-example-line-even test-example-line-6">15</div></pre></div><div class="output"><div class="title">Output</div><pre>
+4
+18
+71
+1
+19999999999999980
+26
+</pre></div></div></div><div class="note"><div class="section-title">Note</div><p>In the first test case of example on the path from the root to the vertex $$$3$$$ there are two vertices $$$1$$$ and $$$3$$$, their sum equals $$$4$$$.</p><p>In the second test case of example on the path from the root to the vertex with number $$$10$$$ there are vertices $$$1$$$, $$$2$$$, $$$5$$$, $$$10$$$, sum of their numbers equals $$$1+2+5+10 = 18$$$. </p></div></div><p>  </p></div>
+</div>
+
+
+
+<script type="text/javascript">
+    $(document).ready(function () {
+            window.changedTests = new Set();
+
+        const inputFileDiv = $("div.input-file");
+        const inputFile = inputFileDiv.text();
+        const outputFileDiv = $("div.output-file");
+        const outputFile = outputFileDiv.text();
+
+
+        if (!endsWith(inputFile, "standard input")
+            && !endsWith(inputFile, "standard input")) {
+            inputFileDiv.attr("style", "font-weight: bold");
+        }
+
+        if (!endsWith(outputFile, "standard output")
+            && !endsWith(outputFile, "standard output")) {
+            outputFileDiv.attr("style", "font-weight: bold");
+        }
+
+        const titleDiv = $("div.header div.title");
+
+
+
+        String.prototype.replaceAll = function (search, replace) {
+            return this.split(search).join(replace);
+        };
+
+        $(".sample-test .title").each(function () {
+            const preId = ("id" + Math.random()).replaceAll(".", "0");
+            const cpyId = ("id" + Math.random()).replaceAll(".", "0");
+
+            $(this).parent().find("pre").attr("id", preId);
+            const $copy = $("<div title='Copy' data-clipboard-target='#" + preId + "' id='" + cpyId + "' class='input-output-copier'>Copy</div>");
+            $(this).append($copy);
+
+            const clipboard = new Clipboard('#' + cpyId, {
+                text: function (trigger) {
+                    const pre = document.querySelector('#' + preId);
+                    const lines = pre.querySelectorAll(".test-example-line");
+                    return Codeforces.filterClipboardText(pre.innerText, lines.length);
+                }
+            });
+
+            const isInput = $(this).parent().hasClass("input");
+
+            clipboard.on('success', function (e) {
+                if (isInput) {
+                    Codeforces.showMessage("The example input has been copied into the clipboard");
+                } else {
+                    Codeforces.showMessage("The example output has been copied into the clipboard");
+                }
+                e.clearSelection();
+            });
+        });
+
+        $(".test-form-item input").change(function () {
+            addPendingSubmissionMessage($($(this).closest("form")), "You changed the answer, do not forget to submit it if you want to save the changes");
+            const index = $(this).closest(".problemindexholder").attr("problemindex");
+            let test = "";
+            $(this).closest("form input").each(function () {
+                const test_ = $(this).attr("name");
+                if (test_ && test_.substring(0, 4) === "test") {
+                    test = test_;
+                }
+            });
+            if (index.length > 0 && test.length > 0) {
+                const indexTest = index + "::" + test;
+                window.changedTests.add(indexTest);
+            }
+        });
+
+        $(window).on('beforeunload', function () {
+            if (window.changedTests.size > 0) {
+                return 'Dialog text here';
+            }
+        });
+
+        autosize($('.test-explanation textarea'));
+
+        function showTestCaseMarker($input, tp, clazz, end) {
+            let top = 1E20;
+            let left = 1E20;
+            let problem = $input.closest(".problemindexholder");
+            $input.find("." + clazz).css("background-color", "#FFFDE7").each(function() {
+                top = Math.min(top, $(this).offset().top);
+                left = Math.min(left, $(this).offset().left);
+            });
+            let testCaseMarker = problem.find(".testCaseMarker_" + tp + "_" + end);
+            if (testCaseMarker.length === 0) {
+                const html = "<div class=\"testCaseMarker testCaseMarker_" + tp + "_" + end + " notice\"></div>";
+                problem.append($(html));
+                testCaseMarker = problem.find(".testCaseMarker_" + tp + "_" + end);
+            }
+            if (testCaseMarker) {
+                testCaseMarker.show()
+                    .offset({top, left: left - 20})
+                    .text(end);
+            }
+        }
+
+        $(".test-example-line").hover(function() {
+            $(this).attr("class").split(" ").forEach((clazz) => {
+                if (clazz.substr(0, "test-example-line-".length) === "test-example-line-") {
+                    let end = clazz.substr("test-example-line-".length);
+                    if (end !== "even" && end !== "odd" && end !== "0") {
+                        showTestCaseMarker($(this).closest(".sample-test").find(".input"), "input", clazz, end);
+                        showTestCaseMarker($(this).closest(".sample-test").find(".output"), "output", clazz, end);
+                    }
+                }
+            });
+        }, function() {
+            $(this).attr("class").split(" ").forEach((clazz) => {
+                if (clazz.substr(0, "test-example-line-".length) === "test-example-line-") {
+                    let end = clazz.substr("test-example-line-".length);
+                    if (end !== "even" && end !== "odd" && end !== "0") {
+                        $("." + clazz).css("background-color", "");
+                        $(this).closest(".problemindexholder").find(".testCaseMarker_input_" + end).hide();
+                        $(this).closest(".problemindexholder").find(".testCaseMarker_output_" + end).hide();
+                    }
+                }
+            });
+        });
+
+    });
+</script>
+        </div>
+        <div
+                    style="margin-bottom: 2em;"
+        >
+
+
+<div class="problemindexholder" problemindex="B" data-uuid="ps_4dc39cc67124b270d217239c183b9ecf6e204460">
+    <div style="display: none; margin:1em 0;text-align: center; position: relative;" class="alert alert-info diff-notifier">
+        <div>The problem statement has recently been changed. <a class="view-changes" href="#">View the changes.</a></div>
+        <span class="diff-notifier-close" style="position: absolute; top: 0.2em; right: 0.3em; cursor: pointer; font-size: 1.4em;">&times;</span>
+    </div>
+        <div class="ttypography"><div class="problem-statement"><div class="header"><div class="title">B. Computer Game</div><div class="time-limit"><div class="property-title">time limit per test</div>2 seconds</div><div class="memory-limit"><div class="property-title">memory limit per test</div>256 megabytes</div><div class="input-file input-standard"><div class="property-title">input</div>standard input</div><div class="output-file output-standard"><div class="property-title">output</div>standard output</div></div><div><p>Monocarp is playing a computer game. Now he wants to complete the first level of this game.</p><p>A level is a rectangular grid of $$$2$$$ rows and $$$n$$$ columns. Monocarp controls a character, which starts in cell $$$(1, 1)$$$ — at the intersection of the $$$1$$$-st row and the $$$1$$$-st column.</p><p>Monocarp's character can move from one cell to another in one step if the cells are adjacent by side and/or corner. Formally, it is possible to move from cell $$$(x_1, y_1)$$$ to cell $$$(x_2, y_2)$$$ in one step if $$$|x_1 - x_2| \le 1$$$ and $$$|y_1 - y_2| \le 1$$$. Obviously, it is prohibited to go outside the grid.</p><p>There are traps in some cells. If Monocarp's character finds himself in such a cell, he dies, and the game ends.</p><p>To complete a level, Monocarp's character should reach cell $$$(2, n)$$$ — at the intersection of row $$$2$$$ and column $$$n$$$.</p><p>Help Monocarp determine if it is possible to complete the level.</p></div><div class="input-specification"><div class="section-title">Input</div><p>The first line contains a single integer $$$t$$$ ($$$1 \le t \le 100$$$) — the number of test cases. Then the test cases follow. Each test case consists of three lines.</p><p>The first line contains a single integer $$$n$$$ ($$$3 \le n \le 100$$$) — the number of columns.</p><p>The next two lines describe the level. The $$$i$$$-th of these lines describes the $$$i$$$-th line of the level — the line consists of the characters '<span class="tex-font-style-tt">0</span>' and '<span class="tex-font-style-tt">1</span>'. The character '<span class="tex-font-style-tt">0</span>' corresponds to a safe cell, the character '<span class="tex-font-style-tt">1</span>' corresponds to a trap cell.</p><p>Additional constraint on the input: cells $$$(1, 1)$$$ and $$$(2, n)$$$ are safe.</p></div><div class="output-specification"><div class="section-title">Output</div><p>For each test case, output <span class="tex-font-style-tt">YES</span> if it is possible to complete the level, and <span class="tex-font-style-tt">NO</span> otherwise.</p></div><div class="sample-tests"><div class="section-title">Example</div><div class="sample-test"><div class="input"><div class="title">Input</div><pre>
+4
+3
+000
+000
+4
+0011
+1100
+4
+0111
+1110
+6
+010101
+101010
+</pre></div><div class="output"><div class="title">Output</div><pre>
+YES
+YES
+NO
+YES
+</pre></div></div></div><div class="note"><div class="section-title">Note</div><p>Consider the example from the statement.</p><p>In the first test case, one of the possible paths is $$$(1, 1) \rightarrow (2, 2) \rightarrow (2, 3)$$$.</p><p>In the second test case, one of the possible paths is $$$(1, 1) \rightarrow (1, 2) \rightarrow (2, 3) \rightarrow (2, 4)$$$.</p><p>In the fourth test case, one of the possible paths is $$$(1, 1) \rightarrow (2, 2) \rightarrow (1, 3) \rightarrow (2, 4) \rightarrow (1, 5) \rightarrow (2, 6)$$$.</p></div></div><p>  </p></div>
+</div>
+
+
+
+<script type="text/javascript">
+    $(document).ready(function () {
+
+        const inputFileDiv = $("div.input-file");
+        const inputFile = inputFileDiv.text();
+        const outputFileDiv = $("div.output-file");
+        const outputFile = outputFileDiv.text();
+
+
+        if (!endsWith(inputFile, "standard input")
+            && !endsWith(inputFile, "standard input")) {
+            inputFileDiv.attr("style", "font-weight: bold");
+        }
+
+        if (!endsWith(outputFile, "standard output")
+            && !endsWith(outputFile, "standard output")) {
+            outputFileDiv.attr("style", "font-weight: bold");
+        }
+
+        const titleDiv = $("div.header div.title");
+
+
+
+
+    });
+</script>
+        </div>
+        <div
+                    style="margin-bottom: 2em;"
+        >
+
+
+<div class="problemindexholder" problemindex="C" data-uuid="ps_4cb3e052959a680db87b38207487136a0c02fc4b">
+    <div style="display: none; margin:1em 0;text-align: center; position: relative;" class="alert alert-info diff-notifier">
+        <div>The problem statement has recently been changed. <a class="view-changes" href="#">View the changes.</a></div>
+        <span class="diff-notifier-close" style="position: absolute; top: 0.2em; right: 0.3em; cursor: pointer; font-size: 1.4em;">&times;</span>
+    </div>
+        <div class="ttypography"><div class="problem-statement"><div class="header"><div class="title">C. The Way to Home</div><div class="time-limit"><div class="property-title">time limit per test</div>1 second</div><div class="memory-limit"><div class="property-title">memory limit per test</div>256 megabytes</div><div class="input-file input-standard"><div class="property-title">input</div>standard input</div><div class="output-file output-standard"><div class="property-title">output</div>standard output</div></div><div><p>A frog lives on the axis <span class="tex-span"><i>Ox</i></span> and needs to reach home which is in the point <span class="tex-span"><i>n</i></span>. She starts from the point <span class="tex-span">1</span>. The frog can jump to the right at a distance not more than <span class="tex-span"><i>d</i></span>. So, after she jumped from the point <span class="tex-span"><i>x</i></span> she can reach the point <span class="tex-span"><i>x</i> + <i>a</i></span>, where <span class="tex-span"><i>a</i></span> is an integer from <span class="tex-span">1</span> to <span class="tex-span"><i>d</i></span>.</p><p>For each point from <span class="tex-span">1</span> to <span class="tex-span"><i>n</i></span> is known if there is a lily flower in it. The frog can jump only in points with a lilies. Guaranteed that there are lilies in the points <span class="tex-span">1</span> and <span class="tex-span"><i>n</i></span>.</p><p>Determine the minimal number of jumps that the frog needs to reach home which is in the point <span class="tex-span"><i>n</i></span> from the point <span class="tex-span">1</span>. Consider that initially the frog is in the point <span class="tex-span">1</span>. If the frog can not reach home, print <span class="tex-font-style-tt">-1</span>.</p></div><div class="input-specification"><div class="section-title">Input</div><p>The first line contains two integers <span class="tex-span"><i>n</i></span> and <span class="tex-span"><i>d</i></span> (<span class="tex-span">2 ≤ <i>n</i> ≤ 100</span>, <span class="tex-span">1 ≤ <i>d</i> ≤ <i>n</i> - 1</span>) — the point, which the frog wants to reach, and the maximal length of the frog jump.</p><p>The second line contains a string <span class="tex-span"><i>s</i></span> of length <span class="tex-span"><i>n</i></span>, consisting of zeros and ones. If a character of the string <span class="tex-span"><i>s</i></span> equals to zero, then in the corresponding point there is no lily flower. In the other case, in the corresponding point there is a lily flower. Guaranteed that the first and the last characters of the string <span class="tex-span"><i>s</i></span> equal to one.</p></div><div class="output-specification"><div class="section-title">Output</div><p>If the frog can not reach the home, print <span class="tex-font-style-tt">-1</span>.</p><p>In the other case, print the minimal number of jumps that the frog needs to reach the home which is in the point <span class="tex-span"><i>n</i></span> from the point <span class="tex-span">1</span>.</p></div><div class="sample-tests"><div class="section-title">Examples</div><div class="sample-test"><div class="input"><div class="title">Input</div><pre>8 4<br />10010101<br /></pre></div><div class="output"><div class="title">Output</div><pre>2<br /></pre></div><div class="input"><div class="title">Input</div><pre>4 2<br />1001<br /></pre></div><div class="output"><div class="title">Output</div><pre>-1<br /></pre></div><div class="input"><div class="title">Input</div><pre>8 4<br />11100101<br /></pre></div><div class="output"><div class="title">Output</div><pre>3<br /></pre></div><div class="input"><div class="title">Input</div><pre>12 3<br />101111100101<br /></pre></div><div class="output"><div class="title">Output</div><pre>4<br /></pre></div></div></div><div class="note"><div class="section-title">Note</div><p>In the first example the from can reach home in two jumps: the first jump from the point <span class="tex-span">1</span> to the point <span class="tex-span">4</span> (the length of the jump is three), and the second jump from the point <span class="tex-span">4</span> to the point <span class="tex-span">8</span> (the length of the jump is four).</p><p>In the second example the frog can not reach home, because to make it she need to jump on a distance three, but the maximum length of her jump equals to two.</p></div></div><p>  </p></div>
+</div>
+
+
+
+<script type="text/javascript">
+    $(document).ready(function () {
+
+        const inputFileDiv = $("div.input-file");
+        const inputFile = inputFileDiv.text();
+        const outputFileDiv = $("div.output-file");
+        const outputFile = outputFileDiv.text();
+
+
+        if (!endsWith(inputFile, "standard input")
+            && !endsWith(inputFile, "standard input")) {
+            inputFileDiv.attr("style", "font-weight: bold");
+        }
+
+        if (!endsWith(outputFile, "standard output")
+            && !endsWith(outputFile, "standard output")) {
+            outputFileDiv.attr("style", "font-weight: bold");
+        }
+
+        const titleDiv = $("div.header div.title");
+
+
+
+
+    });
+</script>
+        </div>
+        <div
+                    style="margin-bottom: 2em;"
+        >
+
+
+<div class="problemindexholder" problemindex="D" data-uuid="ps_ed48dd9e688d1cade894b8c9d967828d0e941be0">
+    <div style="display: none; margin:1em 0;text-align: center; position: relative;" class="alert alert-info diff-notifier">
+        <div>The problem statement has recently been changed. <a class="view-changes" href="#">View the changes.</a></div>
+        <span class="diff-notifier-close" style="position: absolute; top: 0.2em; right: 0.3em; cursor: pointer; font-size: 1.4em;">&times;</span>
+    </div>
+        <div class="ttypography"><div class="problem-statement"><div class="header"><div class="title">D. Transformation: from A to B</div><div class="time-limit"><div class="property-title">time limit per test</div>1 second</div><div class="memory-limit"><div class="property-title">memory limit per test</div>256 megabytes</div><div class="input-file input-standard"><div class="property-title">input</div>standard input</div><div class="output-file output-standard"><div class="property-title">output</div>standard output</div></div><div><p>Vasily has a number <span class="tex-span"><i>a</i></span>, which he wants to turn into a number <span class="tex-span"><i>b</i></span>. For this purpose, he can do two types of operations:</p><ul> <li> multiply the current number by <span class="tex-span">2</span> (that is, replace the number <span class="tex-span"><i>x</i></span> by <span class="tex-span">2·<i>x</i></span>); </li><li> append the digit <span class="tex-span">1</span> to the right of current number (that is, replace the number <span class="tex-span"><i>x</i></span> by <span class="tex-span">10·<i>x</i> + 1</span>). </li></ul><p>You need to help Vasily to transform the number <span class="tex-span"><i>a</i></span> into the number <span class="tex-span"><i>b</i></span> using only the operations described above, or find that it is impossible.</p><p>Note that in this task you are not required to minimize the number of operations. It suffices to find any way to transform <span class="tex-span"><i>a</i></span> into <span class="tex-span"><i>b</i></span>.</p></div><div class="input-specification"><div class="section-title">Input</div><p>The first line contains two positive integers <span class="tex-span"><i>a</i></span> and <span class="tex-span"><i>b</i></span> (<span class="tex-span">1 ≤ <i>a</i> &lt; <i>b</i> ≤ 10<sup class="upper-index">9</sup></span>) — the number which Vasily has and the number he wants to have.</p></div><div class="output-specification"><div class="section-title">Output</div><p>If there is no way to get <span class="tex-span"><i>b</i></span> from <span class="tex-span"><i>a</i></span>, print &quot;<span class="tex-font-style-tt">NO</span>&quot; (without quotes).</p><p>Otherwise print three lines. On the first line print &quot;<span class="tex-font-style-tt">YES</span>&quot; (without quotes). The second line should contain single integer <span class="tex-span"><i>k</i></span> — the length of the transformation sequence. On the third line print the sequence of transformations <span class="tex-span"><i>x</i><sub class="lower-index">1</sub>, <i>x</i><sub class="lower-index">2</sub>, ..., <i>x</i><sub class="lower-index"><i>k</i></sub></span>, where:</p><ul> <li> <span class="tex-span"><i>x</i><sub class="lower-index">1</sub></span> should be equal to <span class="tex-span"><i>a</i></span>, </li><li> <span class="tex-span"><i>x</i><sub class="lower-index"><i>k</i></sub></span> should be equal to <span class="tex-span"><i>b</i></span>, </li><li> <span class="tex-span"><i>x</i><sub class="lower-index"><i>i</i></sub></span> should be obtained from <span class="tex-span"><i>x</i><sub class="lower-index"><i>i</i> - 1</sub></span> using any of two described operations (<span class="tex-span">1 &lt; <i>i</i> ≤ <i>k</i></span>). </li></ul><p>If there are multiple answers, print any of them.</p></div><div class="sample-tests"><div class="section-title">Examples</div><div class="sample-test"><div class="input"><div class="title">Input</div><pre>2 162<br /></pre></div><div class="output"><div class="title">Output</div><pre>YES<br />5<br />2 4 8 81 162 <br /></pre></div><div class="input"><div class="title">Input</div><pre>4 42<br /></pre></div><div class="output"><div class="title">Output</div><pre>NO<br /></pre></div><div class="input"><div class="title">Input</div><pre>100 40021<br /></pre></div><div class="output"><div class="title">Output</div><pre>YES<br />5<br />100 200 2001 4002 40021 <br /></pre></div></div></div></div><p>  </p></div>
+</div>
+
+
+
+<script type="text/javascript">
+    $(document).ready(function () {
+
+        const inputFileDiv = $("div.input-file");
+        const inputFile = inputFileDiv.text();
+        const outputFileDiv = $("div.output-file");
+        const outputFile = outputFileDiv.text();
+
+
+        if (!endsWith(inputFile, "standard input")
+            && !endsWith(inputFile, "standard input")) {
+            inputFileDiv.attr("style", "font-weight: bold");
+        }
+
+        if (!endsWith(outputFile, "standard output")
+            && !endsWith(outputFile, "standard output")) {
+            outputFileDiv.attr("style", "font-weight: bold");
+        }
+
+        const titleDiv = $("div.header div.title");
+
+
+
+
+    });
+</script>
+        </div>
+        <div
+                    style="margin-bottom: 2em;"
+        >
+
+
+<div class="problemindexholder" problemindex="E" data-uuid="ps_16cac84c5facdab907e29a7fab0edbb06e337036">
+    <div style="display: none; margin:1em 0;text-align: center; position: relative;" class="alert alert-info diff-notifier">
+        <div>The problem statement has recently been changed. <a class="view-changes" href="#">View the changes.</a></div>
+        <span class="diff-notifier-close" style="position: absolute; top: 0.2em; right: 0.3em; cursor: pointer; font-size: 1.4em;">&times;</span>
+    </div>
+        <div class="ttypography"><div class="problem-statement"><div class="header"><div class="title">E. Destroying Bridges</div><div class="time-limit"><div class="property-title">time limit per test</div>1 second</div><div class="memory-limit"><div class="property-title">memory limit per test</div>256 megabytes</div><div class="input-file input-standard"><div class="property-title">input</div>standard input</div><div class="output-file output-standard"><div class="property-title">output</div>standard output</div></div><div><p>There are $$$n$$$ islands, numbered $$$1, 2, \ldots, n$$$. Initially, every pair of islands is connected by a bridge. Hence, there are a total of $$$\frac{n (n - 1)}{2}$$$ bridges. </p><p>Everule lives on island $$$1$$$ and enjoys visiting the other islands using bridges. Dominater has the power to destroy at most $$$k$$$ bridges to minimize the number of islands that Everule can reach using (possibly multiple) bridges.</p><p>Find the minimum number of islands (including island $$$1$$$) that Everule can visit if Dominater destroys bridges optimally.</p></div><div class="input-specification"><div class="section-title">Input</div><p>Each test contains multiple test cases. The first line contains a single integer $$$t$$$ ($$$1 \leq t \leq 10^3$$$) — the number of test cases. The description of the test cases follows.</p><p>The first and only line of each test case contains two integers $$$n$$$ and $$$k$$$ ($$$1 \le n \le 100$$$, $$$0 \le k \le \frac{n \cdot (n - 1)}{2}$$$).</p></div><div class="output-specification"><div class="section-title">Output</div><p>For each test case, output the minimum number of islands that Everule can visit if Dominater destroys bridges optimally.</p></div><div class="sample-tests"><div class="section-title">Example</div><div class="sample-test"><div class="input"><div class="title">Input</div><pre>
+<div class="test-example-line test-example-line-even test-example-line-0">6</div><div class="test-example-line test-example-line-odd test-example-line-1">2 0</div><div class="test-example-line test-example-line-even test-example-line-2">2 1</div><div class="test-example-line test-example-line-odd test-example-line-3">4 1</div><div class="test-example-line test-example-line-even test-example-line-4">5 10</div><div class="test-example-line test-example-line-odd test-example-line-5">5 3</div><div class="test-example-line test-example-line-even test-example-line-6">4 4</div></pre></div><div class="output"><div class="title">Output</div><pre>
+2
+1
+4
+1
+5
+1
+</pre></div></div></div><div class="note"><div class="section-title">Note</div><p>In the first test case, since no bridges can be destroyed, all the islands will be reachable.</p><p>In the second test case, you can destroy the bridge between islands $$$1$$$ and $$$2$$$. Everule will not be able to visit island $$$2$$$ but can still visit island $$$1$$$. Therefore, the total number of islands that Everule can visit is $$$1$$$.</p><p>In the third test case, Everule always has a way of reaching all islands despite what Dominater does. For example, if Dominater destroyed the bridge between islands $$$1$$$ and $$$2$$$, Everule can still visit island $$$2$$$ by traveling by $$$1 \to 3 \to 2$$$ as the bridges between $$$1$$$ and $$$3$$$, and between $$$3$$$ and $$$2$$$ are not destroyed.</p><p>In the fourth test case, you can destroy all bridges since $$$k = \frac{n \cdot (n - 1)}{2}$$$. Everule will be only able to visit $$$1$$$ island (island $$$1$$$).</p></div></div><p>  </p></div>
+</div>
+
+
+
+<script type="text/javascript">
+    $(document).ready(function () {
+
+        const inputFileDiv = $("div.input-file");
+        const inputFile = inputFileDiv.text();
+        const outputFileDiv = $("div.output-file");
+        const outputFile = outputFileDiv.text();
+
+
+        if (!endsWith(inputFile, "standard input")
+            && !endsWith(inputFile, "standard input")) {
+            inputFileDiv.attr("style", "font-weight: bold");
+        }
+
+        if (!endsWith(outputFile, "standard output")
+            && !endsWith(outputFile, "standard output")) {
+            outputFileDiv.attr("style", "font-weight: bold");
+        }
+
+        const titleDiv = $("div.header div.title");
+
+
+
+
+    });
+</script>
+        </div>
+        <div
+                    style="margin-bottom: 2em;"
+        >
+
+
+<div class="problemindexholder" problemindex="F" data-uuid="ps_a3dcf88302928bfbc3de4f9408aa8e6a8f459cd3">
+    <div style="display: none; margin:1em 0;text-align: center; position: relative;" class="alert alert-info diff-notifier">
+        <div>The problem statement has recently been changed. <a class="view-changes" href="#">View the changes.</a></div>
+        <span class="diff-notifier-close" style="position: absolute; top: 0.2em; right: 0.3em; cursor: pointer; font-size: 1.4em;">&times;</span>
+    </div>
+        <div class="ttypography"><div class="problem-statement"><div class="header"><div class="title">F. Metro</div><div class="time-limit"><div class="property-title">time limit per test</div>1 second</div><div class="memory-limit"><div class="property-title">memory limit per test</div>256 megabytes</div><div class="input-file input-standard"><div class="property-title">input</div>standard input</div><div class="output-file output-standard"><div class="property-title">output</div>standard output</div></div><div><p>Alice has a birthday today, so she invited home her best friend Bob. Now Bob needs to find a way to commute to the Alice's home.</p><p>In the city in which Alice and Bob live, the first metro line is being built. This metro line contains $$$n$$$ stations numbered from $$$1$$$ to $$$n$$$. Bob lives near the station with number $$$1$$$, while Alice lives near the station with number $$$s$$$. The metro line has two tracks. Trains on the first track go from the station $$$1$$$ to the station $$$n$$$ and trains on the second track go in reverse direction. Just after the train arrives to the end of its track, it goes to the depot immediately, so it is impossible to travel on it after that.</p><p>Some stations are not yet open at all and some are only partially open — for each station and for each track it is known whether the station is closed for that track or not. If a station is closed for some track, all trains going in this track's direction pass the station without stopping on it.</p><p>When the Bob got the information on opened and closed stations, he found that traveling by metro may be unexpectedly complicated. Help Bob determine whether he can travel to the Alice's home by metro or he should search for some other transport.</p></div><div class="input-specification"><div class="section-title">Input</div><p>The first line contains two integers $$$n$$$ and $$$s$$$ ($$$2 \le s \le n \le 1000$$$) — the number of stations in the metro and the number of the station where Alice's home is located. Bob lives at station $$$1$$$.</p><p>Next lines describe information about closed and open stations.</p><p>The second line contains $$$n$$$ integers $$$a_1, a_2, \ldots, a_n$$$ ($$$a_i = 0$$$ or $$$a_i = 1$$$). If $$$a_i = 1$$$, then the $$$i$$$-th station is open on the first track (that is, in the direction of increasing station numbers). Otherwise the station is closed on the first track.</p><p>The third line contains $$$n$$$ integers $$$b_1, b_2, \ldots, b_n$$$ ($$$b_i = 0$$$ or $$$b_i = 1$$$). If $$$b_i = 1$$$, then the $$$i$$$-th station is open on the second track (that is, in the direction of decreasing station numbers). Otherwise the station is closed on the second track.</p></div><div class="output-specification"><div class="section-title">Output</div><p>Print &quot;<span class="tex-font-style-tt">YES</span>&quot; (quotes for clarity) if Bob will be able to commute to the Alice's home by metro and &quot;<span class="tex-font-style-tt">NO</span>&quot; (quotes for clarity) otherwise.</p><p>You can print each letter in any case (upper or lower).</p></div><div class="sample-tests"><div class="section-title">Examples</div><div class="sample-test"><div class="input"><div class="title">Input</div><pre>5 3<br />1 1 1 1 1<br />1 1 1 1 1<br /></pre></div><div class="output"><div class="title">Output</div><pre>YES<br /></pre></div><div class="input"><div class="title">Input</div><pre>5 4<br />1 0 0 0 1<br />0 1 1 1 1<br /></pre></div><div class="output"><div class="title">Output</div><pre>YES<br /></pre></div><div class="input"><div class="title">Input</div><pre>5 2<br />0 1 1 1 1<br />1 1 1 1 1<br /></pre></div><div class="output"><div class="title">Output</div><pre>NO<br /></pre></div></div></div><div class="note"><div class="section-title">Note</div><p>In the first example, all stations are opened, so Bob can simply travel to the station with number $$$3$$$.</p><p>In the second example, Bob should travel to the station $$$5$$$ first, switch to the second track and travel to the station $$$4$$$ then.</p><p>In the third example, Bob simply can't enter the train going in the direction of Alice's home.</p></div></div><p>  </p></div>
+</div>
+
+
+
+<script type="text/javascript">
+    $(document).ready(function () {
+
+        const inputFileDiv = $("div.input-file");
+        const inputFile = inputFileDiv.text();
+        const outputFileDiv = $("div.output-file");
+        const outputFile = outputFileDiv.text();
+
+
+        if (!endsWith(inputFile, "standard input")
+            && !endsWith(inputFile, "standard input")) {
+            inputFileDiv.attr("style", "font-weight: bold");
+        }
+
+        if (!endsWith(outputFile, "standard output")
+            && !endsWith(outputFile, "standard output")) {
+            outputFileDiv.attr("style", "font-weight: bold");
+        }
+
+        const titleDiv = $("div.header div.title");
+
+
+
+
+    });
+</script>
+        </div>
+        <div
+                    style="margin-bottom: 2em;"
+        >
+
+
+<div class="problemindexholder" problemindex="G" data-uuid="ps_5bc7d715d3ec1c11aa37c5d0710ceaf2390eb707">
+    <div style="display: none; margin:1em 0;text-align: center; position: relative;" class="alert alert-info diff-notifier">
+        <div>The problem statement has recently been changed. <a class="view-changes" href="#">View the changes.</a></div>
+        <span class="diff-notifier-close" style="position: absolute; top: 0.2em; right: 0.3em; cursor: pointer; font-size: 1.4em;">&times;</span>
+    </div>
+        <div class="ttypography"><div class="problem-statement"><div class="header"><div class="title">G. Badge</div><div class="time-limit"><div class="property-title">time limit per test</div>1 second</div><div class="memory-limit"><div class="property-title">memory limit per test</div>256 megabytes</div><div class="input-file input-standard"><div class="property-title">input</div>standard input</div><div class="output-file output-standard"><div class="property-title">output</div>standard output</div></div><div><p>In Summer Informatics School, if a student doesn't behave well, teachers make a hole in his badge. And today one of the teachers caught a group of $$$n$$$ students doing yet another trick. </p><p>Let's assume that all these students are numbered from $$$1$$$ to $$$n$$$. The teacher came to student $$$a$$$ and put a hole in his badge. The student, however, claimed that the main culprit is some other student $$$p_a$$$.</p><p>After that, the teacher came to student $$$p_a$$$ and made a hole in his badge as well. The student in reply said that the main culprit was student $$$p_{p_a}$$$.</p><p>This process went on for a while, but, since the number of students was finite, eventually the teacher came to the student, who already had a hole in his badge.</p><p>After that, the teacher put a second hole in the student's badge and decided that he is done with this process, and went to the sauna.</p><p>You don't know the first student who was caught by the teacher. However, you know all the numbers $$$p_i$$$. Your task is to find out for every student $$$a$$$, who would be the student with two holes in the badge if the first caught student was $$$a$$$.</p></div><div class="input-specification"><div class="section-title">Input</div><p>The first line of the input contains the only integer $$$n$$$ ($$$1 \le n \le 1000$$$) — the number of the naughty students.</p><p>The second line contains $$$n$$$ integers $$$p_1$$$, ..., $$$p_n$$$ ($$$1 \le p_i \le n$$$), where $$$p_i$$$ indicates the student who was reported to the teacher by student $$$i$$$.</p></div><div class="output-specification"><div class="section-title">Output</div><p>For every student $$$a$$$ from $$$1$$$ to $$$n$$$ print which student would receive two holes in the badge, if $$$a$$$ was the first student caught by the teacher.</p></div><div class="sample-tests"><div class="section-title">Examples</div><div class="sample-test"><div class="input"><div class="title">Input</div><pre>3<br />2 3 2<br /></pre></div><div class="output"><div class="title">Output</div><pre>2 2 3 <br /></pre></div><div class="input"><div class="title">Input</div><pre>3<br />1 2 3<br /></pre></div><div class="output"><div class="title">Output</div><pre>1 2 3 <br /></pre></div></div></div><div class="note"><div class="section-title">Note</div><p>The picture corresponds to the first example test case.</p><center> <img class="tex-graphics" src="https://espresso.codeforces.com/2a768be595f226bb844954f3e1b020fac268bb8c.png" style="max-width: 100.0%;max-height: 100.0%;" /> </center><p>When $$$a = 1$$$, the teacher comes to students $$$1$$$, $$$2$$$, $$$3$$$, $$$2$$$, in this order, and the student $$$2$$$ is the one who receives a second hole in his badge.</p><p>When $$$a = 2$$$, the teacher comes to students $$$2$$$, $$$3$$$, $$$2$$$, and the student $$$2$$$ gets a second hole in his badge. When $$$a = 3$$$, the teacher will visit students $$$3$$$, $$$2$$$, $$$3$$$ with student $$$3$$$ getting a second hole in his badge.</p><p>For the second example test case it's clear that no matter with whom the teacher starts, that student would be the one who gets the second hole in his badge.</p></div></div><p>  </p></div>
+</div>
+
+
+
+<script type="text/javascript">
+    $(document).ready(function () {
+
+        const inputFileDiv = $("div.input-file");
+        const inputFile = inputFileDiv.text();
+        const outputFileDiv = $("div.output-file");
+        const outputFile = outputFileDiv.text();
+
+
+        if (!endsWith(inputFile, "standard input")
+            && !endsWith(inputFile, "standard input")) {
+            inputFileDiv.attr("style", "font-weight: bold");
+        }
+
+        if (!endsWith(outputFile, "standard output")
+            && !endsWith(outputFile, "standard output")) {
+            outputFileDiv.attr("style", "font-weight: bold");
+        }
+
+        const titleDiv = $("div.header div.title");
+
+
+
+
+    });
+</script>
+        </div>
+        <div
+                    style="margin-bottom: 2em;"
+        >
+
+
+<div class="problemindexholder" problemindex="H" data-uuid="ps_31e2509456a2dd32aea41d948a315d053930172e">
+    <div style="display: none; margin:1em 0;text-align: center; position: relative;" class="alert alert-info diff-notifier">
+        <div>The problem statement has recently been changed. <a class="view-changes" href="#">View the changes.</a></div>
+        <span class="diff-notifier-close" style="position: absolute; top: 0.2em; right: 0.3em; cursor: pointer; font-size: 1.4em;">&times;</span>
+    </div>
+        <div class="ttypography"><div class="problem-statement"><div class="header"><div class="title">H. Protect Sheep</div><div class="time-limit"><div class="property-title">time limit per test</div>1 second</div><div class="memory-limit"><div class="property-title">memory limit per test</div>256 megabytes</div><div class="input-file input-standard"><div class="property-title">input</div>standard input</div><div class="output-file output-standard"><div class="property-title">output</div>standard output</div></div><div><p>Bob is a farmer. He has a large pasture with many sheep. Recently, he has lost some of them due to wolf attacks. He thus decided to place some shepherd dogs in such a way that all his sheep are protected.</p><p>The pasture is a rectangle consisting of <span class="tex-span"><i>R</i> × <i>C</i></span> cells. Each cell is either empty, contains a sheep, a wolf or a dog. Sheep and dogs always stay in place, but wolves can roam freely around the pasture, by repeatedly moving to the left, right, up or down to a neighboring cell. When a wolf enters a cell with a sheep, it consumes it. However, no wolf can enter a cell with a dog.</p><p>Initially there are no dogs. Place dogs onto the pasture in such a way that no wolf can reach any sheep, or determine that it is impossible. Note that since you have many dogs, you do <span class="tex-font-style-bf">not</span> need to minimize their number. </p></div><div class="input-specification"><div class="section-title">Input</div><p>First line contains two integers <span class="tex-span"><i>R</i></span> (<span class="tex-span">1 ≤ <i>R</i> ≤ 500</span>) and <span class="tex-span"><i>C</i></span> (<span class="tex-span">1 ≤ <i>C</i> ≤ 500</span>), denoting the number of rows and the numbers of columns respectively.</p><p>Each of the following <span class="tex-span"><i>R</i></span> lines is a string consisting of exactly <span class="tex-span"><i>C</i></span> characters, representing one row of the pasture. Here, '<span class="tex-font-style-tt">S</span>' means a sheep, '<span class="tex-font-style-tt">W</span>' a wolf and '<span class="tex-font-style-tt">.</span>' an empty cell.</p></div><div class="output-specification"><div class="section-title">Output</div><p>If it is impossible to protect all sheep, output a single line with the word &quot;<span class="tex-font-style-tt">No</span>&quot;.</p><p>Otherwise, output a line with the word &quot;<span class="tex-font-style-tt">Yes</span>&quot;. Then print <span class="tex-span"><i>R</i></span> lines, representing the pasture after placing dogs. Again, '<span class="tex-font-style-tt">S</span>' means a sheep, '<span class="tex-font-style-tt">W</span>' a wolf, '<span class="tex-font-style-tt">D</span>' is a dog and '<span class="tex-font-style-tt">.</span>' an empty space. You are not allowed to move, remove or add a sheep or a wolf.</p><p>If there are multiple solutions, you may print any of them. You don't have to minimize the number of dogs.</p></div><div class="sample-tests"><div class="section-title">Examples</div><div class="sample-test"><div class="input"><div class="title">Input</div><pre>6 6<br />..S...<br />..S.W.<br />.S....<br />..W...<br />...W..<br />......<br /></pre></div><div class="output"><div class="title">Output</div><pre>Yes<br />..SD..<br />..SDW.<br />.SD...<br />.DW...<br />DD.W..<br />......<br /></pre></div><div class="input"><div class="title">Input</div><pre>1 2<br />SW<br /></pre></div><div class="output"><div class="title">Output</div><pre>No<br /></pre></div><div class="input"><div class="title">Input</div><pre>5 5<br />.S...<br />...S.<br />S....<br />...S.<br />.S...<br /></pre></div><div class="output"><div class="title">Output</div><pre>Yes<br />.S...<br />...S.<br />S.D..<br />...S.<br />.S...<br /></pre></div></div></div><div class="note"><div class="section-title">Note</div><p>In the first example, we can split the pasture into two halves, one containing wolves and one containing sheep. Note that the sheep at (2,1) is safe, as wolves cannot move diagonally.</p><p>In the second example, there are no empty spots to put dogs that would guard the lone sheep.</p><p>In the third example, there are no wolves, so the task is very easy. We put a dog in the center to observe the peacefulness of the meadow, but the solution would be correct even without him.</p></div></div><p>  </p></div>
+</div>
+
+
+
+<script type="text/javascript">
+    $(document).ready(function () {
+
+        const inputFileDiv = $("div.input-file");
+        const inputFile = inputFileDiv.text();
+        const outputFileDiv = $("div.output-file");
+        const outputFile = outputFileDiv.text();
+
+
+        if (!endsWith(inputFile, "standard input")
+            && !endsWith(inputFile, "standard input")) {
+            inputFileDiv.attr("style", "font-weight: bold");
+        }
+
+        if (!endsWith(outputFile, "standard output")
+            && !endsWith(outputFile, "standard output")) {
+            outputFileDiv.attr("style", "font-weight: bold");
+        }
+
+        const titleDiv = $("div.header div.title");
+
+
+
+
+    });
+</script>
+        </div>
+        <div
+                    style="margin-bottom: 2em;"
+        >
+
+
+<div class="problemindexholder" problemindex="I" data-uuid="ps_f0c43d7b36ed2dc848caf9bc64c695959cdab3b8">
+    <div style="display: none; margin:1em 0;text-align: center; position: relative;" class="alert alert-info diff-notifier">
+        <div>The problem statement has recently been changed. <a class="view-changes" href="#">View the changes.</a></div>
+        <span class="diff-notifier-close" style="position: absolute; top: 0.2em; right: 0.3em; cursor: pointer; font-size: 1.4em;">&times;</span>
+    </div>
+        <div class="ttypography"><div class="problem-statement"><div class="header"><div class="title">I. Love Triangle</div><div class="time-limit"><div class="property-title">time limit per test</div>1 second</div><div class="memory-limit"><div class="property-title">memory limit per test</div>256 megabytes</div><div class="input-file input-standard"><div class="property-title">input</div>standard input</div><div class="output-file output-standard"><div class="property-title">output</div>standard output</div></div><div><p>As you could know there are no male planes nor female planes. However, each plane on Earth likes some other plane. There are <span class="tex-span"><i>n</i></span> planes on Earth, numbered from <span class="tex-span">1</span> to <span class="tex-span"><i>n</i></span>, and the plane with number <span class="tex-span"><i>i</i></span> likes the plane with number <span class="tex-span"><i>f</i><sub class="lower-index"><i>i</i></sub></span>, where <span class="tex-span">1 ≤ <i>f</i><sub class="lower-index"><i>i</i></sub> ≤ <i>n</i></span> and <span class="tex-span"><i>f</i><sub class="lower-index"><i>i</i></sub> ≠ <i>i</i></span>.</p><p>We call a love triangle a situation in which plane <span class="tex-span"><i>A</i></span> likes plane <span class="tex-span"><i>B</i></span>, plane <span class="tex-span"><i>B</i></span> likes plane <span class="tex-span"><i>C</i></span> and plane <span class="tex-span"><i>C</i></span> likes plane <span class="tex-span"><i>A</i></span>. Find out if there is any love triangle on Earth.</p></div><div class="input-specification"><div class="section-title">Input</div><p>The first line contains a single integer <span class="tex-span"><i>n</i></span> (<span class="tex-span">2 ≤ <i>n</i> ≤ 5000</span>) — the number of planes.</p><p>The second line contains <span class="tex-span"><i>n</i></span> integers <span class="tex-span"><i>f</i><sub class="lower-index">1</sub>, <i>f</i><sub class="lower-index">2</sub>, ..., <i>f</i><sub class="lower-index"><i>n</i></sub></span> (<span class="tex-span">1 ≤ <i>f</i><sub class="lower-index"><i>i</i></sub> ≤ <i>n</i></span>, <span class="tex-span"><i>f</i><sub class="lower-index"><i>i</i></sub> ≠ <i>i</i></span>), meaning that the <span class="tex-span"><i>i</i></span>-th plane likes the <span class="tex-span"><i>f</i><sub class="lower-index"><i>i</i></sub></span>-th.</p></div><div class="output-specification"><div class="section-title">Output</div><p>Output «<span class="tex-font-style-tt">YES</span>» if there is a love triangle consisting of planes on Earth. Otherwise, output «<span class="tex-font-style-tt">NO</span>».</p><p>You can output any letter in lower case or in upper case.</p></div><div class="sample-tests"><div class="section-title">Examples</div><div class="sample-test"><div class="input"><div class="title">Input</div><pre>5<br />2 4 5 1 3<br /></pre></div><div class="output"><div class="title">Output</div><pre>YES<br /></pre></div><div class="input"><div class="title">Input</div><pre>5<br />5 5 5 5 1<br /></pre></div><div class="output"><div class="title">Output</div><pre>NO<br /></pre></div></div></div><div class="note"><div class="section-title">Note</div><p>In first example plane <span class="tex-span">2</span> likes plane <span class="tex-span">4</span>, plane <span class="tex-span">4</span> likes plane <span class="tex-span">1</span>, plane <span class="tex-span">1</span> likes plane <span class="tex-span">2</span> and that is a love triangle.</p><p>In second example there are no love triangles.</p></div></div><p>  </p></div>
+</div>
+
+
+
+<script type="text/javascript">
+    $(document).ready(function () {
+
+        const inputFileDiv = $("div.input-file");
+        const inputFile = inputFileDiv.text();
+        const outputFileDiv = $("div.output-file");
+        const outputFile = outputFileDiv.text();
+
+
+        if (!endsWith(inputFile, "standard input")
+            && !endsWith(inputFile, "standard input")) {
+            inputFileDiv.attr("style", "font-weight: bold");
+        }
+
+        if (!endsWith(outputFile, "standard output")
+            && !endsWith(outputFile, "standard output")) {
+            outputFileDiv.attr("style", "font-weight: bold");
+        }
+
+        const titleDiv = $("div.header div.title");
+
+
+
+
+    });
+</script>
+        </div>
+        <div
+                    style="margin-bottom: 2em;"
+        >
+
+
+<div class="problemindexholder" problemindex="J" data-uuid="ps_bf0906e0cb7e9a4a99bb77b399991602d42abb0e">
+    <div style="display: none; margin:1em 0;text-align: center; position: relative;" class="alert alert-info diff-notifier">
+        <div>The problem statement has recently been changed. <a class="view-changes" href="#">View the changes.</a></div>
+        <span class="diff-notifier-close" style="position: absolute; top: 0.2em; right: 0.3em; cursor: pointer; font-size: 1.4em;">&times;</span>
+    </div>
+        <div class="ttypography"><div class="problem-statement"><div class="header"><div class="title">J. New Year Transportation</div><div class="time-limit"><div class="property-title">time limit per test</div>2 seconds</div><div class="memory-limit"><div class="property-title">memory limit per test</div>256 megabytes</div><div class="input-file input-standard"><div class="property-title">input</div>stdin</div><div class="output-file output-standard"><div class="property-title">output</div>stdout</div></div><div><p>New Year is coming in Line World! In this world, there are <span class="tex-span"><i>n</i></span> cells numbered by integers from <span class="tex-span">1</span> to <span class="tex-span"><i>n</i></span>, as a <span class="tex-span">1 × <i>n</i></span> board. People live in cells. However, it was hard to move between distinct cells, because of the difficulty of escaping the cell. People wanted to meet people who live in other cells.</p><p>So, user tncks0121 has made a transportation system to move between these cells, to celebrate the New Year. First, he thought of <span class="tex-span"><i>n</i> - 1</span> positive integers <span class="tex-span"><i>a</i><sub class="lower-index">1</sub>, <i>a</i><sub class="lower-index">2</sub>, ..., <i>a</i><sub class="lower-index"><i>n</i> - 1</sub></span>. For every integer <span class="tex-span"><i>i</i></span> where <span class="tex-span">1 ≤ <i>i</i> ≤ <i>n</i> - 1</span> the condition <span class="tex-span">1 ≤ <i>a</i><sub class="lower-index"><i>i</i></sub> ≤ <i>n</i> - <i>i</i></span> holds. Next, he made <span class="tex-span"><i>n</i> - 1</span> portals, numbered by integers from 1 to <span class="tex-span"><i>n</i> - 1</span>. The <span class="tex-span"><i>i</i></span>-th (<span class="tex-span">1 ≤ <i>i</i> ≤ <i>n</i> - 1</span>) portal connects cell <span class="tex-span"><i>i</i></span> and cell <span class="tex-span">(<i>i</i> + <i>a</i><sub class="lower-index"><i>i</i></sub>)</span>, and one can travel from cell <span class="tex-span"><i>i</i></span> to cell <span class="tex-span">(<i>i</i> + <i>a</i><sub class="lower-index"><i>i</i></sub>)</span> using the <span class="tex-span"><i>i</i></span>-th portal. Unfortunately, one cannot use the portal backwards, which means one cannot move from cell <span class="tex-span">(<i>i</i> + <i>a</i><sub class="lower-index"><i>i</i></sub>)</span> to cell <span class="tex-span"><i>i</i></span> using the <span class="tex-span"><i>i</i></span>-th portal. It is easy to see that because of condition <span class="tex-span">1 ≤ <i>a</i><sub class="lower-index"><i>i</i></sub> ≤ <i>n</i> - <i>i</i></span> one can't leave the Line World using portals.</p><p>Currently, I am standing at cell <span class="tex-span">1</span>, and I want to go to cell <span class="tex-span"><i>t</i></span>. However, I don't know whether it is possible to go there. Please determine whether I can go to cell <span class="tex-span"><i>t</i></span> by only using the construted transportation system.</p></div><div class="input-specification"><div class="section-title">Input</div><p>The first line contains two space-separated integers <span class="tex-span"><i>n</i></span> (<span class="tex-span">3 ≤ <i>n</i> ≤ 3 × 10<sup class="upper-index">4</sup></span>) and <span class="tex-span"><i>t</i></span> (<span class="tex-span">2 ≤ <i>t</i> ≤ <i>n</i></span>) — the number of cells, and the index of the cell which I want to go to.</p><p>The second line contains <span class="tex-span"><i>n</i> - 1</span> space-separated integers <span class="tex-span"><i>a</i><sub class="lower-index">1</sub>, <i>a</i><sub class="lower-index">2</sub>, ..., <i>a</i><sub class="lower-index"><i>n</i> - 1</sub></span> (<span class="tex-span">1 ≤ <i>a</i><sub class="lower-index"><i>i</i></sub> ≤ <i>n</i> - <i>i</i></span>). It is guaranteed, that using the given transportation system, one cannot leave the Line World.</p></div><div class="output-specification"><div class="section-title">Output</div><p>If I can go to cell <span class="tex-span"><i>t</i></span> using the transportation system, print &quot;<span class="tex-font-style-tt">YES</span>&quot;. Otherwise, print &quot;<span class="tex-font-style-tt">NO</span>&quot;.</p></div><div class="sample-tests"><div class="section-title">Examples</div><div class="sample-test"><div class="input"><div class="title">Input</div><pre>8 4<br />1 2 1 2 1 2 1<br /></pre></div><div class="output"><div class="title">Output</div><pre>YES<br /></pre></div><div class="input"><div class="title">Input</div><pre>8 5<br />1 2 1 2 1 1 1<br /></pre></div><div class="output"><div class="title">Output</div><pre>NO<br /></pre></div></div></div><div class="note"><div class="section-title">Note</div><p>In the first sample, the visited cells are: <span class="tex-span">1, 2, 4</span>; so we can successfully visit the cell <span class="tex-span">4</span>.</p><p>In the second sample, the possible cells to visit are: <span class="tex-span">1, 2, 4, 6, 7, 8</span>; so we can't visit the cell <span class="tex-span">5</span>, which we want to visit.</p></div></div></div>
+</div>
+
+
+
+<script type="text/javascript">
+    $(document).ready(function () {
+
+        const inputFileDiv = $("div.input-file");
+        const inputFile = inputFileDiv.text();
+        const outputFileDiv = $("div.output-file");
+        const outputFile = outputFileDiv.text();
+
+
+        if (!endsWith(inputFile, "standard input")
+            && !endsWith(inputFile, "standard input")) {
+            inputFileDiv.attr("style", "font-weight: bold");
+        }
+
+        if (!endsWith(outputFile, "standard output")
+            && !endsWith(outputFile, "standard output")) {
+            outputFileDiv.attr("style", "font-weight: bold");
+        }
+
+        const titleDiv = $("div.header div.title");
+
+
+
+
+    });
+</script>
+        </div>
+        <div
+                    style="margin-bottom: 1em;"
+        >
+
+
+<div class="problemindexholder" problemindex="K" data-uuid="ps_36f0bc3d0eb59aa25a3c927532f6687ed9107103">
+    <div style="display: none; margin:1em 0;text-align: center; position: relative;" class="alert alert-info diff-notifier">
+        <div>The problem statement has recently been changed. <a class="view-changes" href="#">View the changes.</a></div>
+        <span class="diff-notifier-close" style="position: absolute; top: 0.2em; right: 0.3em; cursor: pointer; font-size: 1.4em;">&times;</span>
+    </div>
+        <div class="ttypography"><div class="problem-statement"><div class="header"><div class="title">K. Party</div><div class="time-limit"><div class="property-title">time limit per test</div>3 seconds</div><div class="memory-limit"><div class="property-title">memory limit per test</div>256 megabytes</div><div class="input-file input-standard"><div class="property-title">input</div>stdin</div><div class="output-file output-standard"><div class="property-title">output</div>stdout</div></div><div><p>A company has <span class="tex-span"><i>n</i></span> employees numbered from <span class="tex-span">1</span> to <span class="tex-span"><i>n</i></span>. Each employee either has no immediate manager or exactly one immediate manager, who is another employee with a different number. An employee <span class="tex-span"><i>A</i></span> is said to be the <span class="tex-font-style-underline">superior</span> of another employee <span class="tex-span"><i>B</i></span> if at least one of the following is true:</p><ul> <li> Employee <span class="tex-span"><i>A</i></span> is the immediate manager of employee <span class="tex-span"><i>B</i></span> </li><li> Employee <span class="tex-span"><i>B</i></span> has an immediate manager employee <span class="tex-span"><i>C</i></span> such that employee <span class="tex-span"><i>A</i></span> is the superior of employee <span class="tex-span"><i>C</i></span>. </li></ul><p>The company will not have a managerial cycle. That is, there will not exist an employee who is the superior of his/her own immediate manager.</p><p>Today the company is going to arrange a party. This involves dividing all <span class="tex-span"><i>n</i></span> employees into several groups: every employee must belong to exactly one group. Furthermore, within any single group, there must not be two employees <span class="tex-span"><i>A</i></span> and <span class="tex-span"><i>B</i></span> such that <span class="tex-span"><i>A</i></span> is the superior of <span class="tex-span"><i>B</i></span>.</p><p>What is the minimum number of groups that must be formed?</p></div><div class="input-specification"><div class="section-title">Input</div><p>The first line contains integer <span class="tex-span"><i>n</i></span> (<span class="tex-span">1 ≤ <i>n</i> ≤ 2000</span>) — the number of employees.</p><p>The next <span class="tex-span"><i>n</i></span> lines contain the integers <span class="tex-span"><i>p</i><sub class="lower-index"><i>i</i></sub></span> (<span class="tex-span">1 ≤ <i>p</i><sub class="lower-index"><i>i</i></sub> ≤ <i>n</i></span> or <span class="tex-span"><i>p</i><sub class="lower-index"><i>i</i></sub> = </span>-1). Every <span class="tex-span"><i>p</i><sub class="lower-index"><i>i</i></sub></span> denotes the immediate manager for the <span class="tex-span"><i>i</i></span>-th employee. If <span class="tex-span"><i>p</i><sub class="lower-index"><i>i</i></sub></span> is -1, that means that the <span class="tex-span"><i>i</i></span>-th employee does not have an immediate manager. </p><p>It is guaranteed, that no employee will be the immediate manager of him/herself (<span class="tex-span"><i>p</i><sub class="lower-index"><i>i</i></sub> ≠ <i>i</i></span>). Also, there will be no managerial cycles.</p></div><div class="output-specification"><div class="section-title">Output</div><p>Print a single integer denoting the minimum number of groups that will be formed in the party.</p></div><div class="sample-tests"><div class="section-title">Examples</div><div class="sample-test"><div class="input"><div class="title">Input</div><pre>5<br />-1<br />1<br />2<br />1<br />-1<br /></pre></div><div class="output"><div class="title">Output</div><pre>3<br /></pre></div></div></div><div class="note"><div class="section-title">Note</div><p>For the first example, three groups are sufficient, for example: </p><ul> <li> Employee 1 </li><li> Employees 2 and 4 </li><li> Employees 3 and 5 </li></ul></div></div></div>
+</div>
+
+
+
+<script type="text/javascript">
+    $(document).ready(function () {
+
+        const inputFileDiv = $("div.input-file");
+        const inputFile = inputFileDiv.text();
+        const outputFileDiv = $("div.output-file");
+        const outputFile = outputFileDiv.text();
+
+
+        if (!endsWith(inputFile, "standard input")
+            && !endsWith(inputFile, "standard input")) {
+            inputFileDiv.attr("style", "font-weight: bold");
+        }
+
+        if (!endsWith(outputFile, "standard output")
+            && !endsWith(outputFile, "standard output")) {
+            outputFileDiv.attr("style", "font-weight: bold");
+        }
+
+        const titleDiv = $("div.header div.title");
+
+
+
+
+    });
+</script>
+        </div>
+    </div>
+
+    <div id="footer">
+        <div><a href="https://codeforces.com/">Codeforces</a> (c) Copyright 2010-2026 Mike Mirzayanov</div>
+        <div>The only programming contests Web 2.0 platform</div>
+
+    </div>
+
+</div>
+</div>
+    <script type="application/javascript">
+        if ('serviceWorker' in navigator && 'fetch' in window && 'caches' in window) {
+            navigator.serviceWorker.register('/service-worker-15318.js')
+                .then(function (registration) {
+                    console.log('Service worker registered: ', registration);
+                })
+                .catch(function (error) {
+                    console.log('Registration failed: ', error);
+                });
+        }
+    </script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon='{"version":"2024.11.0","token":"316c29dfa3804effb5a91c52a59b5bd0","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+</body>
+</html>

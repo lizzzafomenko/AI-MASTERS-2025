@@ -1,0 +1,9 @@
+fastapi[standard]
+pydantic
+numpy
+python-dotenv
+aiohttp
+scipy
+requests
+scikit-learn
+uvicorn
